@@ -1,9 +1,9 @@
 #! /bin/sh
 
 # Paths to planner components
-TRANSLATE="./randward/translate/translate.py"
-PREPROCESS="./randward/preprocess/preprocess"
-SEARCH="./randward/search/release-search"
+TRANSLATE="$(dirname $(which randward-planner))/randward/translate/translate.py"
+PREPROCESS="$(dirname $(which randward-planner))/randward/preprocess/preprocess"
+SEARCH="$(dirname $(which randward-planner))/randward/search/release-search"
 
 run_planner() {
     echo "1. Running translator"
